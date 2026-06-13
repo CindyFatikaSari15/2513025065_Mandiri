@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basket Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+<div class="hud">
+  <div>Score: <span id="score">0</span></div>
+  <div>Lives: <span id="lives">❤️❤️❤️</span></div>
+  <button id="pauseBtn">Pause</button>
+  <button id="resetBtn">Reset</button>
+</div>
+
+  <div id="startScreen" class="overlay">
+    <div class="panel">
+      <h1>Basket Coin Catch</h1>
+      <p>Catch the coins and avoid losing lives.</p>
+      <button id="startBtn">Start Game</button>
+    </div>
+  </div>
+
+  <div id="gameOver" class="overlay hidden">
+    <div class="panel">
+      <h1>Game Over</h1>
+      <p>Final Score: <span id="finalScore">0</span></p>
+      <button id="playAgainBtn">Play Again</button>
+    </div>
+  </div>
+
+  <button id="restartBtn" class="restart-btn">Restart</button>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
